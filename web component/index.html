@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Components</title>
+  <style>
+    div{
+      border: 2px solid orange;
+    }
+  </style>
+  <script src="tooltip.js"></script>
+  <script src="confirm-link.js"></script>
+</head>
+<body>
+  <p>
+    <uc-tooltip text="Web component is a set of standards">Web Components</uc-tooltip> are awesome</p>
+  <uc-tooltip></uc-tooltip>
+  <div>This does not get the web component styles</div>
+  <a is="uc-confirm-link" href="https://www.google.com">Google</a><!-- 웹 컴포넌트에 래핑하거나 해당 앵커 태그를 기반으로 하는 웹 컴포넌트 생성 -->
+</body>
+</html>
